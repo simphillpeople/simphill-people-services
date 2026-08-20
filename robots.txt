@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# After publishing, replace the line below with your real GitHub Pages sitemap URL.
+# Sitemap: https://YOUR-USERNAME.github.io/simphill-people-services/sitemap.xml
