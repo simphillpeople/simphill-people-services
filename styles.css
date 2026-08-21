@@ -188,3 +188,33 @@ footer{max-width:var(--max);margin:auto;padding:34px 28px 50px;color:var(--muted
   .contact-panel h2{font-size:38px}
   footer{padding:28px 20px;flex-direction:column;gap:10px}
 }
+
+/* Founder-led hero refinement */
+.founder-hero{grid-template-columns:minmax(0,1.08fr) minmax(340px,.72fr);gap:64px;align-items:center;padding-top:58px;padding-bottom:58px}
+.founder-hero .hero-copy{padding-right:10px}
+.founder-hero .hero-copy h1{max-width:780px}
+.founder-hero-visual{position:relative;max-width:520px;justify-self:end;width:100%;border-radius:28px;overflow:hidden;box-shadow:0 24px 60px rgba(20,38,58,.16);background:#e9e6df}
+.founder-hero-visual img{display:block;width:100%;aspect-ratio:4/4.35;object-fit:cover;object-position:center 34%}
+.founder-hero-card{position:absolute;left:20px;right:20px;bottom:20px;padding:17px 18px;border-radius:16px;background:rgba(20,38,58,.92);color:#fff;backdrop-filter:blur(10px);box-shadow:0 10px 30px rgba(0,0,0,.16)}
+.founder-hero-card strong,.founder-hero-card span,.founder-hero-card small{display:block}
+.founder-hero-card strong{font-size:16px;margin-bottom:3px}
+.founder-hero-card span{font-size:13px;opacity:.92}
+.founder-hero-card small{font-size:11px;opacity:.72;margin-top:7px;letter-spacing:.02em}
+
+/* Founder section is intentionally text-led now that Stuart appears in the hero */
+.about-founder{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:88px;align-items:start;padding-top:86px;padding-bottom:86px}
+.about-heading h2{font-family:Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:-.03em;font-size:clamp(38px,4vw,58px);line-height:1.08;margin:0}
+.about-founder .about-content{max-width:720px}
+.about-actions{display:flex;gap:28px;flex-wrap:wrap;margin-top:30px}
+
+@media (max-width:980px){
+  .founder-hero{grid-template-columns:1fr 1fr;gap:40px}
+  .founder-hero-visual{max-width:460px}
+  .about-founder{grid-template-columns:1fr 1fr;gap:46px}
+}
+@media (max-width:760px){
+  .founder-hero{grid-template-columns:1fr;gap:34px}
+  .founder-hero-visual{justify-self:start;max-width:500px}
+  .founder-hero-visual img{aspect-ratio:1.08/1;object-position:center 28%}
+  .about-founder{grid-template-columns:1fr;gap:28px;padding-top:64px;padding-bottom:64px}
+}
